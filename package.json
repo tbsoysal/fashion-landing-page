@@ -2,7 +2,7 @@
   "name": "fashion-landing-page",
   "version": "1.0.0",
   "description": "fashion landing page project",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
