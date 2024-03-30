@@ -7,3 +7,11 @@ $gold: #A28140;
 $white: #F4F1EC;
 $bordeaux: #800020;
 
+//Sections
+@import 'navbar';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
