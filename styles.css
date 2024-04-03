@@ -1,6 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .navbar {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   background-color: #121618;
   color: #F4F1EC;
@@ -29,10 +82,50 @@
   background-color: #800020;
 }
 
+.hero {
+  padding-inline: 10%;
+  background-color: #121618;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__content {
+  width: 50%;
+}
+.hero__content h2 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+.hero__content p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+.hero__content button {
+  font-family: inherit;
+  font-size: 18px;
+  border: none;
+  background-color: #A28140;
+  color: #F4F1EC;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.hero__content button i {
+  margin-left: 10px;
+}
+.hero__content button:hover {
+  background-color: #800020;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  color: #F4F1EC;
 }
 
 /*# sourceMappingURL=styles.css.map */

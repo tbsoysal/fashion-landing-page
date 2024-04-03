@@ -1,0 +1,42 @@
+.hero {
+    padding-inline: 10%;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+       width: 50%;
+        h2 {
+            font-size: 56px;
+            font-weight: 500;
+            line-height: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: 18px;
+            border: none;
+            background-color: $gold;
+            color: $white;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+            i {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: $bordeaux;
+            }
+        }
+    }
+}

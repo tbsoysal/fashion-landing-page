@@ -8,10 +8,14 @@ $white: #F4F1EC;
 $bordeaux: #800020;
 
 //Sections
+@import 'reset';
 @import 'navbar';
+@import 'hero';
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    color: $white;
 }
