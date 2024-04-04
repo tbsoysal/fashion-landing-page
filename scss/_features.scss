@@ -1,0 +1,33 @@
+.features {
+    background-color: $black;
+    padding: 70px 10%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+            img {
+                width: 82px;
+                height: 82px;
+                margin: 0 auto;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 25px;
+            }
+        }
+    }
+}
