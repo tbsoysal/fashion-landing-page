@@ -262,4 +262,80 @@ body {
   line-height: 25px;
 }
 
+.portfolio {
+  background-color: #F4F1EC;
+  padding: 70px 10%;
+}
+.portfolio .caption h2 {
+  color: #A28140;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.portfolio .caption p {
+  color: #121618;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+.portfolio .video {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+}
+.portfolio .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.portfolio .textcolumns {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.portfolio .textcolumns .col {
+  width: 30%;
+  color: #121618;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.portfolio .textcolumns .col h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.portfolio .textcolumns .col p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.portfolio .artgallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.portfolio .artgallery img {
+  width: 100%;
+}
+.portfolio .artgallery button {
+  grid-column: 4/5;
+  width: 100px;
+  margin-left: auto;
+  margin-top: 10px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: #A28140;
+  color: #F4F1EC;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.portfolio .artgallery button:hover {
+  background-color: #800020;
+}
+
 /*# sourceMappingURL=styles.css.map */
