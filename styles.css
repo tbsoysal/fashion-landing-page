@@ -53,8 +53,17 @@ table {
   border-spacing: 0;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  color: #F4F1EC;
+}
+
 .navbar {
   font-weight: 500;
+  font-size: 16px;
   background-color: #121618;
   color: #F4F1EC;
   display: flex;
@@ -92,21 +101,23 @@ table {
 .hero__content {
   width: 50%;
 }
-.hero__content h2 {
-  font-size: 56px;
+.hero__content h1 {
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.3em;
   margin-bottom: 30px;
 }
 .hero__content p {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.2em;
-  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-bottom: 60px;
 }
 .hero__content button {
   font-family: inherit;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   border: none;
   background-color: #A28140;
   color: #F4F1EC;
@@ -120,12 +131,56 @@ table {
   background-color: #800020;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+.highlights {
+  background-color: #F4F1EC;
+  padding: 70px 10%;
+}
+.highlights__content {
+  margin-bottom: 70px;
+}
+.highlights__content h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #A28140;
+  margin-bottom: 30px;
+}
+.highlights__content p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #121618;
+}
+.highlights__gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.highlights__gallery .post {
+  width: min-content;
+}
+.highlights__gallery .post h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #A28140;
+  margin: 12px 0;
+}
+.highlights__gallery .post p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #121618;
+}
+.highlights__gallery .post button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: #A28140;
   color: #F4F1EC;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

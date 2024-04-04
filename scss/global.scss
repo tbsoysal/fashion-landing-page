@@ -7,10 +7,9 @@ $gold: #A28140;
 $white: #F4F1EC;
 $bordeaux: #800020;
 
+
 //Sections
 @import 'reset';
-@import 'navbar';
-@import 'hero';
 
 body {
     padding: 0;
@@ -19,3 +18,8 @@ body {
     font-family: "Playfair Display", serif;
     color: $white;
 }
+
+@import 'navbar';
+@import 'hero';
+@import 'highlights';
+

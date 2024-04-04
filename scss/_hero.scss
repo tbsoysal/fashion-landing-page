@@ -7,23 +7,25 @@
 
     &__content {
        width: 50%;
-        h2 {
-            font-size: 56px;
+        h1 {
+            font-size: 48px;
             font-weight: 500;
             line-height: 1.3em;
             margin-bottom: 30px;
         }
 
         p {
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 1.2em;
-            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            margin-bottom: 60px;
         }
 
         button {
             font-family: inherit;
-            font-size: 18px;
+            font-size: 16px;
+            font-weight: 500;
             border: none;
             background-color: $gold;
             color: $white;
