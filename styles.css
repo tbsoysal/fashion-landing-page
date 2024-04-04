@@ -338,4 +338,56 @@ body {
   background-color: #800020;
 }
 
+.contact {
+  background-color: #A28140;
+  padding: 70px 10%;
+  color: #F4F1EC;
+}
+.contact h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.contact p {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.contact .email-form {
+  display: flex;
+  margin-bottom: 15px;
+}
+.contact .email-form input[type=email] {
+  width: 30%;
+  height: 30px;
+  font-family: inherit;
+  background-color: #F4F1EC;
+  padding: 5px 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.contact .email-form input[type=email]::placeholder {
+  opacity: 0.5;
+}
+.contact .email-form input[type=submit] {
+  display: block;
+  border: none;
+  background-color: #F4F1EC;
+  color: #A28140;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.contact .email-form input[type=submit]:hover {
+  background-color: #800020;
+  color: #F4F1EC;
+}
+.contact a {
+  color: #F4F1EC;
+}
+
 /*# sourceMappingURL=styles.css.map */

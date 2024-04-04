@@ -1,0 +1,57 @@
+.contact {
+    background-color: $gold;
+    padding: 70px 10%;
+    color: $white;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    .email-form {
+        display: flex;
+        margin-bottom: 15px;
+
+        input[type="email"] {
+            width: 30%;
+            height: 30px;
+            font-family: inherit;
+            background-color: $white;
+            padding: 5px 20px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+
+        input[type="submit"] {
+            display: block;
+            border: none;
+            background-color: $white;
+            color: $gold;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-left: 15px;
+
+            &:hover {
+                background-color: $bordeaux;
+                color: $white;
+            }
+        }
+    }
+    a {
+        color: $white;
+    }
+}
