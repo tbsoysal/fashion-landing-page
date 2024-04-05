@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADA Luxe</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css">
     <script src="https://kit.fontawesome.com/c043c7361d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -150,11 +151,9 @@
             <p>Explore how Ada Luxe is making waves in the world of fashion -</p>
         </div>
         <div class="video">
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/gJpXlRkW6Fw?si=b7C9YNZBitxME0up&amp;controls=0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <video class="video-js" controls preload="auto" data-setup='{}' poster="images/videocover.png">
+            <source src="images/Video Fashion Ads. _ Passa Silkwear.mp4" type="video/mp4" />
+           </video>
         </div>
 
         <div class="textcolumns">
@@ -260,6 +259,8 @@
         <p class="copyright">© 2023 Ada Luxe. All Rights Reserved. Designed by AC Global Group. Terms & Conditions |
             Privacy Policy.<br>(Coded by Tahaberk SOYSAL)</p>
     </footer>
+
+    <script src="node_modules/video.js/dist/video.min.js"></script>
 </body>
 
 </html>

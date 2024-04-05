@@ -8,5 +8,8 @@
     "sass": "sass --watch scss/global.scss styles.css"
   },
   "author": "Tahaberk SOYSAL",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "video.js": "^8.10.0"
+  }
 }
