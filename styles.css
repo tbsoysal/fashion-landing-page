@@ -193,41 +193,45 @@ body {
   background-color: #F4F1EC;
   padding: 70px 10%;
 }
-.highlights__content {
+.highlights .container {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+.highlights .container__content {
   margin-bottom: 70px;
 }
-.highlights__content h1 {
+.highlights .container__content h1 {
   font-size: 48px;
   font-weight: 500;
   color: #A28140;
   margin-bottom: 30px;
 }
-.highlights__content p {
+.highlights .container__content p {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   color: #121618;
 }
-.highlights__gallery {
+.highlights .container__gallery {
   display: flex;
   justify-content: space-between;
 }
-.highlights__gallery .post {
+.highlights .container__gallery .post {
   width: min-content;
 }
-.highlights__gallery .post h3 {
+.highlights .container__gallery .post h3 {
   font-size: 20px;
   font-weight: 600;
   color: #A28140;
   margin: 12px 0;
 }
-.highlights__gallery .post p {
+.highlights .container__gallery .post p {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
   color: #121618;
 }
-.highlights__gallery .post button {
+.highlights .container__gallery .post button {
   display: block;
   font-family: inherit;
   font-size: 16px;
@@ -240,10 +244,17 @@ body {
   margin-left: auto;
   margin-top: 30px;
 }
-.highlights__gallery .post button:hover {
+.highlights .container__gallery .post button:hover {
   background-color: #800020;
 }
 
+@media screen and (max-width: 1250px) {
+  .highlights .container__gallery {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
 .about {
   background-color: #A28140;
   padding: 70px 10%;
