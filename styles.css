@@ -259,47 +259,66 @@ body {
   background-color: #A28140;
   padding: 70px 10%;
 }
-.about .caption {
+.about .container {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+.about .container .caption {
   margin-bottom: 60px;
 }
-.about .caption h1 {
+.about .container .caption h1 {
   font-size: 48px;
   font-weight: 500;
   color: #F4F1EC;
   margin-bottom: 20px;
 }
-.about .caption p {
+.about .container .caption p {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-.about .content {
+.about .container .content {
   display: flex;
   gap: 80px;
 }
-.about .content__text {
+.about .container .content__text {
   width: 100%;
   height: 100%;
 }
-.about .content__text h3 {
+.about .container .content__text h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 25px;
 }
-.about .content__text p {
+.about .container .content__text p {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 1px;
 }
-.about .content__text__container:not(:last-child) {
+.about .container .content__text__container:not(:last-child) {
   margin-bottom: 50px;
 }
-.about .content__image {
+.about .container .content__image {
   width: 100%;
+  object-fit: contain;
 }
 
+@media screen and (max-width: 1250px) {
+  .about .container .content {
+    flex-direction: column;
+  }
+  .about .container .content__image {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about .content__image {
+    width: 100% !important;
+  }
+}
 .features {
   background-color: #121618;
   padding: 70px 10%;
