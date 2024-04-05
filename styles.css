@@ -127,27 +127,31 @@ body {
 .hero {
   padding-inline: 10%;
   background-color: #121618;
+}
+.hero .container {
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-inline: auto;
 }
-.hero__content {
+.hero .container__content {
   width: 50%;
 }
-.hero__content h1 {
+.hero .container__content h1 {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.3em;
   margin-bottom: 30px;
 }
-.hero__content p {
+.hero .container__content p {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.5em;
   margin-bottom: 60px;
 }
-.hero__content button {
+.hero .container__content button {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -157,13 +161,34 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
-.hero__content button i {
+.hero .container__content button i {
   margin-left: 10px;
 }
-.hero__content button:hover {
+.hero .container__content button:hover {
   background-color: #800020;
 }
 
+@media screen and (max-width: 1170px) {
+  .hero {
+    padding-top: 60px;
+  }
+  .hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .container__content {
+    width: 100%;
+  }
+  .hero .container__content button {
+    margin-bottom: 50px;
+  }
+  .hero .container__image {
+    margin-inline: auto;
+  }
+  .hero .container__image img {
+    width: 100%;
+  }
+}
 .highlights {
   background-color: #F4F1EC;
   padding: 70px 10%;
