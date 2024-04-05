@@ -62,14 +62,18 @@ body {
 }
 
 .navbar {
-  font-weight: 500;
-  font-size: 16px;
+  padding: 10px 50px;
   background-color: #121618;
   color: #F4F1EC;
+}
+.navbar .container {
+  max-width: 1800px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-inline: auto;
 }
 .navbar__links, .navbar__buttons {
   display: flex;
@@ -90,7 +94,36 @@ body {
 .navbar__links a:hover, .navbar__buttons a:hover {
   background-color: #800020;
 }
+.navbar .hamburger-icon {
+  display: none;
+}
+.navbar .hamburger-icon a {
+  color: #F4F1EC;
+  font-size: 23px;
+}
 
+@media screen and (max-width: 1170px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    padding-inline: 20px;
+  }
+  .navbar .container {
+    flex-direction: row;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__buttons {
+    display: none;
+  }
+  .navbar .hamburger-icon {
+    display: block;
+  }
+}
 .hero {
   padding-inline: 10%;
   background-color: #121618;

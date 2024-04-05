@@ -1,15 +1,21 @@
 .navbar {
-    font-weight: 500;
-    font-size: 16px;
+    padding: 10px 50px;
     background-color: $black;
     color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
+
+    .container {
+        max-width: 1800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 16px;
+        margin-inline: auto;
+    }
 
 
-    &__links, &__buttons {
+    &__links,
+    &__buttons {
         display: flex;
         padding: 0;
 
@@ -30,8 +36,45 @@
             &:hover {
                 background-color: $bordeaux;
             }
+        }
+    }
 
-           
+    .hamburger-icon {
+        display: none;
+        a{
+        color: $white;
+        font-size: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .navbar {
+
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        padding-inline: 20px;
+
+        .container {
+            flex-direction: row;
+        }
+
+        &__links {
+            display: none;
+        }
+
+        &__buttons {
+            display: none;
+        }
+
+        .hamburger-icon {
+            display: block;
         }
     }
 }
