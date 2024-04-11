@@ -324,8 +324,10 @@ body {
   padding: 70px 10%;
 }
 .features ul {
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
+  margin-inline: auto;
 }
 .features ul li {
   width: 350px;
@@ -350,6 +352,16 @@ body {
   line-height: 25px;
 }
 
+@media screen and (max-width: 1250px) {
+  .features ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  .features ul li {
+    width: 100%;
+  }
+}
 .portfolio {
   background-color: #F4F1EC;
   padding: 70px 10%;

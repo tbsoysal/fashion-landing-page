@@ -3,8 +3,10 @@
     padding: 70px 10%;
 
     ul {
+        max-width: 1600px;
         display: flex;
         justify-content: space-between;
+        margin-inline: auto;
 
         li {
             width: 350px;
@@ -28,6 +30,18 @@
                 letter-spacing: 1px;
                 line-height: 25px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .features ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+
+        li {
+            width: 100%;
         }
     }
 }
