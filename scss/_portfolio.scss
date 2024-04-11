@@ -2,67 +2,77 @@
     background-color: $white;
     padding: 70px 10%;
 
-    .caption {
+    .container {
+        max-width: 1600px;
+        margin-inline: auto;
 
-        h2 {
-            color: $gold;
-            font-size: 48px;
-            font-weight: 500;
-            margin-bottom: 25px;
-        }
-        p {
-            color: $black;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 100px;
-        }
-    }
+        .caption {
 
-    .video {
-        width: 100%;
-        margin-bottom: 100px;
-    }
+            h2 {
+                color: $gold;
+                font-size: 48px;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
 
-    .textcolumns {
-        display: flex;
-        gap: 30px;
-        margin-bottom: 100px;
-
-        .col {
-            width: 30%;
-            color: $black;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            h3 {
+            p {
+                color: $black;
                 font-size: 20px;
                 font-weight: 600;
-                margin-bottom: 15px;
-            }
-            p {
-                font-size: 14px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                line-height: 25px;
+                margin-bottom: 50px;
             }
         }
-    }
 
-    .artgallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        .video {
+            margin-inline: auto;
+            margin-bottom: 100px;
 
-        img {
-            width: 100%;
+            .video-js {
+                background: none;
+            }
         }
 
-        button {
-            grid-column: 4 / 5;
+        .textcolumns {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 100px;
+
+            .col {
+                width: 30%;
+                color: $black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .artgallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .seemorebtn {
             width: 100px;
             margin-left: auto;
-            margin-top: 10px;
+            margin-top: 50px;
             display: block;
             font-family: inherit;
             font-size: 16px;
@@ -78,4 +88,27 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1600px) {
+    .portfolio .container .textcolumns {
+        flex-direction: column;
+
+        .col {
+            width: 100%;
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            img {
+                margin-inline: auto;
+                width: min(100%, 400px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
 }

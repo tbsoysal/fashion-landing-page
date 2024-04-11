@@ -366,58 +366,64 @@ body {
   background-color: #F4F1EC;
   padding: 70px 10%;
 }
-.portfolio .caption h2 {
+.portfolio .container {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+.portfolio .container .caption h2 {
   color: #A28140;
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 25px;
 }
-.portfolio .caption p {
+.portfolio .container .caption p {
   color: #121618;
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 50px;
+}
+.portfolio .container .video {
+  margin-inline: auto;
   margin-bottom: 100px;
 }
-.portfolio .video {
-  width: 100%;
-  margin-bottom: 100px;
+.portfolio .container .video .video-js {
+  background: none;
 }
-.portfolio .textcolumns {
+.portfolio .container .textcolumns {
   display: flex;
   gap: 30px;
   margin-bottom: 100px;
 }
-.portfolio .textcolumns .col {
+.portfolio .container .textcolumns .col {
   width: 30%;
   color: #121618;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.portfolio .textcolumns .col h3 {
-  font-size: 20px;
+.portfolio .container .textcolumns .col h3 {
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.portfolio .textcolumns .col p {
-  font-size: 14px;
+.portfolio .container .textcolumns .col p {
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 25px;
 }
-.portfolio .artgallery {
+.portfolio .container .artgallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 10px;
 }
-.portfolio .artgallery img {
+.portfolio .container .artgallery img {
   width: 100%;
 }
-.portfolio .artgallery button {
-  grid-column: 4/5;
+.portfolio .container .seemorebtn {
   width: 100px;
   margin-left: auto;
-  margin-top: 10px;
+  margin-top: 50px;
   display: block;
   font-family: inherit;
   font-size: 16px;
@@ -428,10 +434,25 @@ body {
   padding: 5px 10px;
   cursor: pointer;
 }
-.portfolio .artgallery button:hover {
+.portfolio .container .seemorebtn:hover {
   background-color: #800020;
 }
 
+@media screen and (max-width: 1600px) {
+  .portfolio .container .textcolumns {
+    flex-direction: column;
+  }
+  .portfolio .container .textcolumns .col {
+    width: 100%;
+  }
+  .portfolio .container .textcolumns .col p {
+    margin-bottom: 30px;
+  }
+  .portfolio .container .textcolumns .col img {
+    margin-inline: auto;
+    width: min(100%, 400px);
+  }
+}
 .contact {
   background-color: #A28140;
   padding: 70px 10%;
