@@ -55,3 +55,20 @@
         color: $white;
     }
 }
+
+@media screen and (max-width: 950px) {
+    .email-form {
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+        input[type="email"] {
+            width: 100% !important;
+            font-size: 16px !important;
+        }
+        input[type="submit"] {
+            width: 100% !important;
+            margin-inline: 0 !important;
+            padding: 15px 20px !important;
+        }
+    }
+}

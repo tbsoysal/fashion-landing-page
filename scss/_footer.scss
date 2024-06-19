@@ -63,3 +63,25 @@ footer {
         line-height: 25px;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .navigations {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navigations {
+        flex-direction: column;
+        gap: 30px;
+
+        .links h3 {
+            font-size: 25px !important;
+        }
+
+        .dropdown label {
+            font-size: 25px !important;
+        }
+    }
+}
+

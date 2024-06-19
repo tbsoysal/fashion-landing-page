@@ -23,13 +23,8 @@
             }
         }
 
-        .video {
-            margin-inline: auto;
+        .myVideo {
             margin-bottom: 100px;
-
-            .video-js {
-                background: none;
-            }
         }
 
         .textcolumns {
@@ -61,7 +56,7 @@
 
         .artgallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 10px;
 
             img {
@@ -90,7 +85,7 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
     .portfolio .container .textcolumns {
         flex-direction: column;
 
@@ -107,8 +102,4 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 550px) {
-
 }

@@ -382,12 +382,8 @@ body {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.portfolio .container .video {
-  margin-inline: auto;
+.portfolio .container .myVideo {
   margin-bottom: 100px;
-}
-.portfolio .container .video .video-js {
-  background: none;
 }
 .portfolio .container .textcolumns {
   display: flex;
@@ -414,7 +410,7 @@ body {
 }
 .portfolio .container .artgallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
 }
 .portfolio .container .artgallery img {
@@ -438,7 +434,7 @@ body {
   background-color: #800020;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .portfolio .container .textcolumns {
     flex-direction: column;
   }
@@ -505,6 +501,22 @@ body {
   color: #F4F1EC;
 }
 
+@media screen and (max-width: 950px) {
+  .email-form {
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .email-form input[type=email] {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  .email-form input[type=submit] {
+    width: 100% !important;
+    margin-inline: 0 !important;
+    padding: 15px 20px !important;
+  }
+}
 footer {
   background-color: #121618;
   color: #F4F1EC;
@@ -554,6 +566,25 @@ footer img {
 footer p {
   text-align: center;
   line-height: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .navigations {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navigations {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .navigations .links h3 {
+    font-size: 25px !important;
+  }
+  .navigations .dropdown label {
+    font-size: 25px !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
