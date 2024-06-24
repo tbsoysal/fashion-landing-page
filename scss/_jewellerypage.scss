@@ -1,0 +1,96 @@
+.jewellerymain {
+    background-color: $white;
+    padding: 70px 10%;
+
+    .container {
+        max-width: 1600px;
+        margin-inline: auto;
+
+        &__content {
+            margin-bottom: 70px;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 500;
+                color: $gold;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 100px;
+            column-gap: 30px;
+
+            .product {
+                width: min-content;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                border-radius: 10px;
+                border: 1px solid black;
+
+                &:hover {
+                    background-color: rgba($color: #fff, $alpha: 1);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                img {
+                    width: 320px;
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 15px;
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin: 12px 0;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 22px;
+                    }
+                }
+
+                &__buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    z-index: 10;
+                    padding: 20px 10px;
+
+                    button {
+                        width: 48%;
+                        display: block;
+                        font-family: inherit;
+                        font-size: 16px;
+                        font-weight: 500;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: $gold;
+                        color: $white;
+                        padding: 10px 15px;
+                        cursor: pointer;
+    
+                        &:hover {
+                            background-color: $bordeaux;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.collection_highlights {
+    background-color: $white;
+    padding: 70px 10%;
+
+    .container {
+        max-width: 1600px;
+        margin-inline: auto;
+
+        &__content {
+            margin-bottom: 70px;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 500;
+                color: $gold;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                color: $black;
+            }
+        }
+
+        &__gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 100px;
+
+            .post {
+                width: min-content;
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $gold;
+                    margin: 12px 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    color: $black;
+                }
+
+                button {
+                    display: block;
+                    font-family: inherit;
+                    font-size: 16px;
+                    font-weight: 500;
+                    border: none;
+                    background-color: $gold;
+                    color: $white;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    margin-left: auto;
+                    margin-top: 30px;
+
+                    &:hover {
+                        background-color: $bordeaux;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .highlights {
+
+        .container__gallery {
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+    }
+}
