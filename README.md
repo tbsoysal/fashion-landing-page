@@ -1,8 +1,40 @@
-# Fashion Landing Page
+# Fashion Web Site
 
-# Live on: https://tbsoysal.github.io/fashion-landing-page/
-![Cover](https://github.com/tbsoysal/fashion-landing-page/assets/164586408/86b23c6d-c115-4ae3-9061-882dce0d7690)
+Website for AdaLuxe; a fashion brand 
 
+## Features
+- Clean and modern design.
+- Showcase the products in categorized pages.
+- Easy-to-use interface with a clean design.
+- Fully responsive.
 
-# Figma Design: <a href="https://www.figma.com/file/YHqM6q9hsbXqpnyb2e5dNO/Ada-Luxe%3A-Elegant-Responsive-Fashion-Landing-Page-Template-(Community)?type=design&node-id=15-51&mode=design&t=RJrJWJQ33FQZDLmQ-0">Figma Link</a>
+## Tech Stack
+- HTML
+- SCSS
+- JavaScript
+
+## Getting Started
+
+To run this project locally:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/tbsoysal/fashion-landing-page.git
+   cd fashion-landing-page
+   ```
+
+2. Open the `index.html` file in your browser to start using the app.
+
+## Live Link
+
+You can view the live version of the app here: [https://tbsoysal.github.io/fashion-landing-page/](https://tbsoysal.github.io/fashion-landing-page/)
+
+## Screenshots
+
 ![Landing page](https://github.com/tbsoysal/fashion-landing-page/assets/164586408/34101075-8152-45a9-8539-2bb8a5f42e5f)
+
+
+## Author
+
+Created by [@tbsoysal](https://github.com/tbsoysal)
